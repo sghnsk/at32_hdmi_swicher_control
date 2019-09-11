@@ -1,5 +1,6 @@
 import argparse
 import serial
+import sys
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -12,4 +13,4 @@ if __name__ == "__main__":
             print(ser.readline().decode().rstrip())
     except (KeyboardInterrupt, Exception) as ex:
         print(str(ex))
-        exit(1)
+        sys.exit(1)
