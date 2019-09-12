@@ -1,5 +1,7 @@
 #include <Arduino.h>
 
+// подключать с d2 через R=1k5 к R2, что идет к 17 выводу ts3dv642
+
 #define SWITCH_PIN 2
 byte incByte;
 
